@@ -96,6 +96,8 @@ io.on("connection", (socket) => {
     });
 });
 
-http.listen(5500, () => {
-    console.log("Server is running on port 5500");
+const PORT = process.env.PORT || 5500;
+
+http.listen(PORT, () => {
+    console.log("Server is running on port " + PORT);
 });
