@@ -1,0 +1,24 @@
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">ID</th>
+      <th>HOSTNAME</th>
+      <th>STATUS</th>
+      <th>DATE CREATED</th>
+      <th>LAST ONLINE</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#log hosts}}
+    {{/log}}
+    {{#each hosts}}
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">{{this._id}}</td>
+        <td>{{this.hostname}}</td>
+        <td>{{this.status}}</td>
+        <td>{{this.dateCreated}}</td>
+        <td>{{this.lastActive}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
