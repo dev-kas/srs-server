@@ -1,0 +1,24 @@
+<h3>ADD NEW HOST VERSION</h3>
+
+<form method="POST" enctype="application/x-www-form-urlencoded" action="/verman">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="vername" name="version" required>
+    <label class="mdl-textfield__label" for="vername">Version Name</label>
+  </div>
+  <br>
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="url" id="veruri" name="url" required>
+    <label class="mdl-textfield__label" for="veruri">Version Update URL</label>
+  </div>
+<br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="password" id="apikey" name="apikey" required>
+    <label class="mdl-textfield__label" for="apikey">Auth Key</label>
+  </div>
+  <br>
+  <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+  POST NEW HOST VERSION
+</button>
+</form>
